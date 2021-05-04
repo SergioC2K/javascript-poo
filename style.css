@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --success: #4caf50;
+  --error: #f44336;
+  --info: #1e90ff;
+  --white: #ffffff;
+  --black: #0000;
+}
+
+nav {
+  width: 100%;
+  padding: 20px;
+  background-color: black;
+}
+
+nav h2 {
+  color: #fff;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+main div {
+  padding: 0;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.right {
+  width: 50%;
+  float: right;
+}
+
+.left {
+  width: 45%;
+  float: left;
+}
+
+.button {
+  color: var(--white);
+  background-color: var(--success);
+  width: 20%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px;
+  border: 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.button-info {
+  background-color: var(--info);
+}
+
+.card-form {
+  margin: 0 auto;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
+  border-radius: 20px;
+}
+
+.card-title {
+  background: var(--info);
+  margin: -20px;
+  padding: 20px;
+  border-radius: 20px 20px 0px 0px;
+  text-align: center;
+  font-size: 1.6em;
+  font-family: inherit;
+}
+.card-form:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.card-content {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 00px 00px 20px 20px;
+}
+.card-content .input-form {
+  width: 100%;
+  margin: 10px 4px;
+  background: transparent;
+  border-bottom: 2px 2px 2px 2px;
+  padding: 10px;
+}
+
+.card-content .button {
+  margin: 10px 4px;
+}
+
+.product-list {
+  background-color: var(--info);
+}

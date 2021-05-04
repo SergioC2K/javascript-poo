@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>Todo App</h2>
+      </nav>
+    </header>
+    <main>
+      <div class="rigth">
+        <div class="card-form">
+          <div class="card-title">
+            <strong>New Product</strong>
+          </div>
+          <div class="card-content">
+            <form id="product-form">
+              <input
+                type="text"
+                placeholder="Name of Product"
+                class="input-form"
+                id="name"
+              />
+              <input
+                type="number"
+                placeholder="Price of Product"
+                class="input-form"
+                id="price"
+              />
+              <input
+                type="date"
+                id="created"
+                class="input-form"
+                placeholder="Price
+                    of Product"
+              />
+              <input type="submit" value="Save" class="button button-success" />
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="left">
+        <div class="product-list">
+          <div class="list-title">
+            <strong>Products</strong>
+          </div>
+          <div class="list-content">
+            <ul id="card-list"></ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="alert-message"></div>
+    </footer>
+  </body>
+  <script src="app.js"></script>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CARD CSS</title>
+    <style>
+      :root {
+        --card-color: rgba(54, 0, 204, 0.555);
+        --card-header-color: crimson;
+        --card-body-color: rgb(40, 4, 124);
+        --card-footer-color: indigo;
+      }
+      .card {
+        margin: 0 auto;
+        background: var(--card-color);
+        color: rgb(255, 255, 255);
+        width: 400px;
+        padding: 20px;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
+        border-radius: 20px;
+      }
+      .card-header {
+        background: var(--card-header-color);
+        margin: -20px;
+        padding: 20px;
+        border-radius: 20px 20px 0px 0px;
+      }
+      .card-body {
+        background: var(--card-body-color);
+        margin: -20px;
+        padding: 20px;
+        border-radius: 00px 00px 20px 20px;
+      }
+      .card-footer {
+        background: var(--card-footer-color);
+        margin: -20px;
+        padding: 20px;
+        border-radius: 00px 00px 20px 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+      a {
+        padding: 8px;
+        margin: 2px;
+        border-radius: 5px;
+        border: 1px solid white;
+        width: 100%;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+      }
+      a:hover {
+        color: var(--card-body-color);
+        background: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-header">
+        <h1>CARD CON SECCIONES</h1>
+      </div>
+      <div class="card-body">
+        <p>
+          Lorem iprehenderit aliquid, iustoiis eveniet. Exercitationem fugiat,
+          nesciunt, veritatis optio quo, cupiditate eaque vitae quisquam nam
+          repellendus atque numquam.
+        </p>
+      </div>
+      <div class="card-footer">
+        <a href="">Link</a>
+        <a href="">Link</a>
+      </div>
+    </div>
+  </body>
+</html>
